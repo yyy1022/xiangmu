@@ -1,0 +1,49 @@
+section {
+  height: 1800px;
+}
+.s-box2 {
+  width: 1050px;
+  margin: auto;
+  height: 1600px;
+  /* border: 1px solid black; */
+  font-size: 14px;
+}
+.projectName {
+  background: #b8b5c2;
+  text-indent: 16px;
+  margin: 20px 0 10px 0;
+  height: 30px;
+  line-height: 30px;
+}
+.s-box2One {
+  height: 35px;
+  line-height: 35px;
+  margin: 20px 0 10px 0;
+  text-indent: 16px;
+  /* border: 1px solid black;
+  overflow: hidden; */
+}
+.s-box2One > input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #dcdee2;
+}
+.s-box2One > select {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #dcdee2;
+}
+.s-box2Two {
+  margin-top: 20px;
+}
+button {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #dcdee2;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  margin-right: 30px;
+}

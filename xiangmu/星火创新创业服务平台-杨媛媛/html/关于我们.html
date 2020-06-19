@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>关于我们</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/新闻动态.css" />
+    <link rel="stylesheet" href="../css/关于我们.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <div class="h-box1"><img src="../images/logo1.png" /></div>
+      <ul class="h-box2">
+        <li><a href="新闻动态.html">新闻动态</a></li>
+        <li><a href="大赛报名.html">大赛报名</a></li>
+        <li>
+          <a href="http://bbs.myhope365.com/" target="_blanlk">天亮社区</a>
+        </li>
+        <li class="h-li2"><a href="关于我们.html">关于我们</a></li>
+        <li class="h-li1" id="li1"><a href="登录.html">登录</a></li>
+        <li style="display: none;" id="li2">
+          <a href="个人中心.html">个人中心</a>
+        </li>
+      </ul>
+    </header>
+    <div class="box1"><img src="../images/关于我们.jpg" /></div>
+    <section>
+      <div class="s-box1">
+        <div
+          data-v-79e989e3=""
+          style="
+            font-size: 18px;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid rgb(153, 162, 163);
+          "
+        >
+          公司简介
+        </div>
+        <p>
+          COMPANY PROFILE
+        </p>
+        <div>
+          天亮教育是一家从事大数据云计算、人工智能、教育培训、产品开发、咨询服务、人才优选为一体的综合型互联网科技公司。公司由一批BAT等一线互联网IT精英人士创建，以"快乐工作，认真生活，打造高端职业技能教育的一面旗帜"为愿景，胸怀"让天下没有难找的工作"使命，坚持"客户第一、诚信、激情、拥抱变化"的价值观，全心全意为学员赋能提效，践行技术改变命运的初心。
+        </div>
+      </div>
+      <div class="s-box2">
+        <img src="../images/学习.jpg" />
+      </div>
+    </section>
+    <footer>
+      <div class="f-box1">
+        <div class="f-box">
+          <a href="#">友情链接： </a>
+          <a href="http://myhope365.com/news/index?id=66" target="blank"> 天亮公开课</a>
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank">星云大数据平台</a>
+          <a href="http://yuqing.shangyuninfo.com/" target="blank">天亮舆情监控系统</a>
+          <a href="http://bs.shangyuninfo.com/home" target="blank">IT毕业设计 </a>
+          <a href="http://www.sisec.top/" target="blank">网络安全课堂</a>
+        </div>
+        <p id="copyright" style="display: inline;">
+          copyright@版权所有 天亮教育 </p><span id="websiteId">网站标识码：23667788978</span>
+          备案编号：冀ICP备2356645765765
+        </p>
+        电子邮箱：<p id="email" style="display: inline;">623143506@qq.com</p>技术支持：<span id="technicalSupport">河北尚云信息科技有限公司</span>
+      </div>
+      <div class="f-box2"><img src="../images/微信公众号.jpg" /><p>微信公众号</p></div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/底部.js"></script>
+  <script>
+    if (localStorage.isLogin) {
+      $("#li1").hide();
+      $("#li2").show();
+    }
+  </script>
+</html>

@@ -1,0 +1,17 @@
+.box2One > input {
+  width: 200px;
+  height: 28px;
+  float: left;
+}
+.box2Three > input {
+  width: 100px;
+}
+.input1 {
+  background-color: #57a3f3;
+  border-radius: 5px;
+  /* outline: none; */
+  border: none;
+  margin-top: 2px;
+  margin-left: 5px;
+  color: white;
+}

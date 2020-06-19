@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人中心</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/新闻动态.css" />
+    <link rel="stylesheet" href="../css/个人中心.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <div class="h-box1"><img src="../images/logo1.png" /></div>
+      <ul class="h-box2">
+        <li><a href="新闻动态.html">新闻动态</a></li>
+        <li><a href="大赛报名.html">大赛报名</a></li>
+        <li>
+          <a href="http://bbs.myhope365.com/" target="_blanlk">天亮社区</a>
+        </li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li class="h-li2" id="li2"><a href="个人中心.html">个人中心</a></li>
+        <li class="h-li1" id="li1" style="display: none;">
+          <a href="登录.html">登录</a>
+        </li>
+      </ul>
+    </header>
+    <section>
+      <main>
+        <ul class="main">
+          <li class="select">
+            <a><img src="../images/心 (2).png" />&nbsp;基本信息</a>
+          </li>
+          <li>
+            <a><img src="../images/信息 (1).png" />&nbsp;参赛信息</a>
+          </li>
+        </ul>
+        <div class="Box">
+          <div>
+            <div class="box1 box6">
+              <div class="among">
+                <p
+                  style="font-size: 22px; margin-bottom: 30px; color: #515a65;"
+                >
+                  基本信息
+                </p>
+                <div class="top">
+                  <form>
+                    <label for="name" > 用户名：</label>
+                    <input
+                      type="text"
+                      disabled
+                      value="yyyy"
+                      id="name"
+                     
+                      required
+                    /><br />
+                    <label for="class"> 账户类别：</label>
+                    <input
+                      type="text"
+                      disabled
+                      value="选手"
+                      id="class"
+                      style="background-color: #f3f3f3; color: #ccc;"
+                      required
+                    /><br />
+                    <label for="number" id="number"> 手机号：</label>
+                    <input
+                      type="text"
+                      disabled
+                      value="17603291022"
+                      id="number1"
+                      style="background-color: #f3f3f3; color: #ccc;"
+                      required
+                      pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                    /><br />
+                    <label for="name1"> 姓名：</label>
+                    <input
+                      type="text"
+                      id="name1"
+                      required
+                    /><br />
+                    <label for="number1"> 身份证号：</label>
+                    <input
+                      type="text"
+                      value="130529199910226229"
+                      id="number1"
+                      pattern="\d{15}|\d{18}"
+                      required
+                    /><br />
+                    <label for="email"> 邮箱：</label>
+                    <input
+                      type="email"
+                      value="1610579810@qq.com"
+                      id="email"
+                      required
+                    /><br />
+                    <label for="text1" > 学校：</label>
+                    <input type="text" value="" id="school" required /><br />
+                    <label for="text2"> 专业</label>
+                    <input type="text" value="" id="text2" required /><br />
+                    <label for="text3" > 年级：</label>
+                    <input type="text" value="" id="text3" required /><br />
+                    <button style="margin-left: 100px;">更新信息</button>
+                    <button style="margin-left: 30px;" id="btn">
+                      退出登录
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="box2 box6">
+              <div class="among">
+                <p
+                  style="font-size: 22px; margin-bottom: 30px; color: #515a65;"
+                >
+                  暂无参赛信息
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer>
+      <div class="f-box1">
+        <div class="f-box">
+          <a href="#">友情链接： </a>
+          <a href="http://myhope365.com/news/index?id=66" target="blank"> 天亮公开课</a>
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank">星云大数据平台</a>
+          <a href="http://yuqing.shangyuninfo.com/" target="blank">天亮舆情监控系统</a>
+          <a href="http://bs.shangyuninfo.com/home" target="blank">IT毕业设计 </a>
+          <a href="http://www.sisec.top/" target="blank">网络安全课堂</a>
+        </div>
+        <p id="copyright" style="display: inline;">
+          copyright@版权所有 天亮教育 </p><span id="websiteId">网站标识码：23667788978</span>
+          备案编号：冀ICP备2356645765765
+        </p>
+        电子邮箱：<p id="email" style="display: inline;">623143506@qq.com</p>技术支持：<span id="technicalSupport">河北尚云信息科技有限公司</span>
+      </div>
+      <div class="f-box2"><img src="../images/微信公众号.jpg" /><p>微信公众号</p></div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/底部.js"></script>
+  <script>
+    $(".main>li").click(function () {
+      console.log(11111);
+      $(this).addClass("select").siblings().removeClass("select");
+      $(".box6").eq($(this).index()).show().siblings().hide();
+    });
+    $("#btn").click(function(){
+  
+        // debugger;
+        // var value1 = JSON.stringifyde(res.userInf);
+        localStorage.removeItem("isLogin", false);
+        window.open("登录.html")
+    })
+var l1 =JSON.parse(localStorage.userInf)
+console.log(l1)
+
+$('#name').val(l1.loginName)
+$('#name1').val(l1.userName)
+
+$('#number').val(l1.phonenumber)
+$('#number1').val(l1.idNumber)
+$('#email').val(l1.email)
+$('#school').val(l1.school)
+console.log($("#school"))
+$('#text3').val(l1.grade)
+
+$('#text2').val(l1.reviewStatus)
+  </script>
+</html>

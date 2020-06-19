@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>详情</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-3.3.7-dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/首页.css" />
+
+    <link rel="stylesheet" href="../css/搜索.css" />
+    <link rel="stylesheet" href="../css/详情.css" />
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <div class="h-img">
+        <img src="../首页/images/logo-header.08ec1297.png" />
+      </div>
+      <nav>
+        <ul class="nav">
+          <li style="margin-top: 5px;"><a href="#">首页</a></li>
+          <li class="getBox1" style="margin-top: 3px;">
+            <a href="#"
+              >课程分类
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-jiantouarrow483"></use>
+              </svg>
+            </a>
+
+            <ul id="box1"></ul>
+          </li>
+          <li style="margin-top: 5px;"><a href="#">专属课堂</a></li>
+        </ul>
+      </nav>
+      <div class="h-search">
+        <form class="bs-example bs-example-form" role="form">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="input"
+              placeholder="搜索课程"
+            />
+            <span class="input-group-addon"
+              ><button>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-sousuo"></use>
+                </svg>
+                <a href="搜索.html">搜索</a>
+              </button></span
+            >
+          </div>
+        </form>
+      </div>
+      <div class="h-shopping">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-gouwuche"></use>
+        </svg>
+        <span>登录注册</span>
+        <i>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            style="width: 25px; height: 25px; color: #cccc;"
+          >
+            <use href="#icon-ren" style="background-color: #cccc;"></use>
+          </svg>
+        </i>
+      </div>
+    </header>
+    <!-- 主体 -->
+    <section class="main1">
+      <div class="m-title">
+        <span
+          ><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-tubiao-fangzi"></use>
+          </svg>
+          首页</span
+        >/<span>课程搜索</span>
+      </div>
+      <div class="m-box1">
+        <div class="m-box1Img"><img /></div>
+        <div class="m-box1Right1">
+          <h2 class="h2">vue全家桶从入门到实战</h2>
+          <p class="m-box1Right1-p">
+            累计<span class="participationsCount"></span>人学习
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+          </p>
+          <h1>免费</h1>
+          <div class="m-button">立即观看</div>
+        </div>
+        <div class="m-box1Right2">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-like-line"></use>
+          </svg>
+          <span class="show1">收藏</span>
+          <span class="hide1" style="display: none;">已收藏</span>
+        </div>
+      </div>
+
+      <ul class="m-box1Nav">
+        <li class="active3"><a>课程描述</a></li>
+        <li><a>目录</a></li>
+        <li><a>评论</a></li>
+      </ul>
+      <div class="boxBig">
+        <div class="m-box1-text"></div>
+
+        <!-- 目录catalogue -->
+
+        <div id="catalogue" style="display: none;">
+       
+     
+      </div>
+      <!-- pingjia -->
+      <div class="evaluate" style="display: none;">
+        <div class="evaluate-box1">
+          <p>评价</p>
+          <p class="evaluate-box-text">
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-xingxing
+                  "
+              ></use>
+            </svg>
+            <span>非常好</span>
+          </p>
+        </div>
+        <div class="evaluate-box2">
+          <textarea placeholder="请发表您对课程的评价"></textarea>
+          <button>发表评论</button>
+        </div>
+        <div id="evaluate-box3"></div>
+        <!-- <div class="evaluate-box3">
+            <div class="evaluate-Box3">
+              <div class="evaluate-box3-left">
+                <svg
+                  class="icon"
+                  aria-hidden="true"
+                  style="width: 25px; height: 25px; color: #cccc;"
+                >
+                  <use href="#icon-ren" style="background-color: #cccc;"></use>
+                </svg>
+                <span>王晶辉</span>
+              </div>
+              <div class="evaluate-box3-right">
+                <svg class="icon" aria-hidden="true">
+                  <use
+                    xlink:href="#icon-xingxing
+                "
+                  ></use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                  <use
+                    xlink:href="#icon-xingxing
+                "
+                  ></use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                  <use
+                    xlink:href="#icon-xingxing
+                "
+                  ></use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                  <use
+                    xlink:href="#icon-xingxing
+                "
+                  ></use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                  <use
+                    xlink:href="#icon-xingxing
+                "
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <p style="text-indent: 2em; margin-top: 5px;">詹姆斯</p>
+            <p style="float: right; margin-top: 20px;">
+              2020-05-03 15:55 <span style="color: black;">回复</span>
+            </p>
+          </div> -->
+        <!-- <ul class="bottomPage" style="margin-top: 70px;">
+            <li id="leftBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy-copy
+           "
+                ></use>
+              </svg>
+            </li>
+            <li class="li1">1</li>
+            <li class="li1">2</li>
+            <li id="rightBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy
+           "
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        -->
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer style="margin-top: 0;">
+      <div class="f-box">
+        <div class="f-title">友情链接:</div>
+        <div class="f-nav">
+          <a href="http://myhope365.com/news/index?id=66" target="blank">
+            天亮公开课</a
+          >
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank"
+            >星云大数据平台</a
+          >
+          <a href="http://yuqing.shangyuninfo.com/" target="blank"
+            >天亮舆情监控系统</a
+          >
+          <a href="http://bs.shangyuninfo.com/home" target="blank"
+            >IT毕业设计
+          </a>
+        </div>
+        <hr
+          style="
+            background-color: rgb(84, 84, 84);
+            width: 1000px;
+            margin: auto;
+            height: 3px;
+            border: none;
+            margin-top: 10px;
+          "
+        />
+        <div style="text-align: center; margin-top: 5px;">
+          Copyright © 2017-2025 石家庄天亮教育科技有限公司
+          备案号:冀ICP备17020003号
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="../js/iconfont.js"></script>
+  <script src="../js/详情.js"></script>
+  <script src="../js/首页.js"></script>
+</html>

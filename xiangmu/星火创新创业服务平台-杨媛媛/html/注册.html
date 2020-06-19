@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/新闻动态.css" />
+    <link rel="stylesheet" href="../css/登录.css" />
+    <link rel="stylesheet" href="../css/忘记密码.css" />
+    <link rel="stylesheet" href="../css/注册.css" />
+  </head>
+  <body>
+    <header>
+      <div class="h-box1"><img src="../images/logo1.png" /></div>
+      <ul class="h-box2">
+        <li><a href="新闻动态.html">新闻动态</a></li>
+        <li><a href="大赛报名.html">大赛报名</a></li>
+        <li>
+          <a href="http://bbs.myhope365.com/" target="_blanlk">天亮社区</a>
+        </li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li class="h-li1"><a href="#">登录</a></li>
+      </ul>
+    </header>
+    <div class="box">
+      <div class="box1">
+        <div class="box1-one">
+          <div class="one select"><a href="#">大学生</a></div>
+          <div class="one"><a>老师</a></div>
+          <div class="one"><a>企业注册</a></div>
+        </div>
+
+        <div class="box2">
+          <div class="boxBox">
+            <div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入用户名（4-20位，禁止特殊符号）"
+                  id="loginName"
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input
+                  type="password"
+                  placeholder="请输入密码（4-20位）"
+                  required
+                  id="password"
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input
+                  type="password"
+                  placeholder="请确认密码（重新输入上面密码）"
+                  required
+                  id="password1"
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="（请输入真实姓名）"
+                  id="userName"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="（请输入身份证）"
+                  required
+                  pattern="\d{15}|\d{18}"
+                  id="idNumber"
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="（请输入学校）"
+                  id="school"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="email"
+                  placeholder="（请输入邮箱）"
+                  required
+                  id="email"
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="（请输入年级）"
+                  id="grade"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入手机号"
+                  required
+                  id="phonenumber"
+                  pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                />
+              </div>
+              <div class="box2One box2Three">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入验证码"
+                  required
+                  id="code"
+                  pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                />
+                <input
+                  class="input1"
+                  type="button"
+                  value="获取验证码"
+                  required
+                  id="btn2"
+                />
+              </div>
+              <div class="box2One box2Two">
+                <!-- <input style="margin-left: 10px;" type="button" value="注册" /> -->
+                <button id="btn1">注册</button>
+              </div>
+              <div
+                style="
+                  float: left;
+                  margin-left: 80px;
+                  margin-top: 10px;
+                  margin-bottom: 20px;
+                "
+              >
+                <a style="color: #999999;" href="登录.html">登录</a>
+              </div>
+            </div>
+            <div style="display: none;">
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入用户名（4-20位，禁止特殊符号）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input
+                  type="password"
+                  placeholder="请在次输密码（4-20位）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input
+                  type="password"
+                  placeholder="请确认密码（重新输入上面密码）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="（请输入真实姓名）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="（请输入身份证）"
+                  required
+                  pattern="\d{15}|\d{18}"
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="（请输入学校）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="email" placeholder="（请输入邮箱）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="（请输入年级）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入手机号"
+                  required
+                  pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                />
+              </div>
+              <div class="box2One box2Three">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入手机号"
+                  required
+                  pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                />
+                <input
+                  class="input1"
+                  type="button"
+                  value="获取验证码"
+                  required
+                />
+              </div>
+              <div class="box2One box2Two">
+                <!-- <input
+                  style="margin-left: 10px;"
+                  type="button"
+                  value="注册"
+                  required
+                /> -->
+                <button>注册</button>
+              </div>
+              <div style="float: left; margin-left: 80px; margin-top: 10px;">
+                <a style="color: #999999;" href="登录.html">登录</a>
+              </div>
+            </div>
+            <div style="display: none;">
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入用户名（4-20位，特殊符号）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input
+                  type="password"
+                  placeholder="请入输密码（4-20位）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input
+                  type="password"
+                  placeholder="请确认密码（重新输入上面密码）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="（请输入企业名称）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="email" placeholder="（请输入邮箱）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input
+                  type="text"
+                  placeholder="（请输入统一社会编码）"
+                  required
+                />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="（请输入联系人）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="（请输入联系地址）" required />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入手机号"
+                  required
+                  pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                />
+              </div>
+              <div class="box2One box2Three">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input
+                  type="text"
+                  placeholder="请输入手机号"
+                  required
+                  pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+                />
+                <input
+                  class="input1"
+                  type="button"
+                  value="获取验证码"
+                  required
+                />
+              </div>
+
+              <div style="float: left; margin-left: 80px; margin-top: 10px;">
+                <a style="color: #999999;" href="登录.html">登录</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="f-box1">
+        <div class="f-box">
+          <a href="#">友情链接： </a>
+          <a href="http://myhope365.com/news/index?id=66" target="blank"> 天亮公开课</a>
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank">星云大数据平台</a>
+          <a href="http://yuqing.shangyuninfo.com/" target="blank">天亮舆情监控系统</a>
+          <a href="http://bs.shangyuninfo.com/home" target="blank">IT毕业设计 </a>
+          <a href="http://www.sisec.top/" target="blank">网络安全课堂</a>
+        </div>
+        <p id="copyright" style="display: inline;">
+          copyright@版权所有 天亮教育 </p><span id="websiteId">网站标识码：23667788978</span>
+          备案编号：冀ICP备2356645765765
+        </p>
+        电子邮箱：<p id="email" style="display: inline;">623143506@qq.com</p>技术支持：<span id="technicalSupport">河北尚云信息科技有限公司</span>
+      </div>
+      <div class="f-box2"><img src="../images/微信公众号.jpg" /><p>微信公众号</p></div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/注册.js"></script>
+  <script src="../js/底部.js"></script>
+  <script>
+    $(".one").click(function () {
+      console.log(11111);
+      $(this).addClass("select").siblings().removeClass("select");
+      $(".boxBox>div").eq($(this).index()).show().siblings().hide();
+    });
+  </script>
+</html>

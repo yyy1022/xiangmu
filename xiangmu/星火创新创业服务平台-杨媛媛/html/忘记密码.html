@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>忘记密码</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/新闻动态.css" />
+    <link rel="stylesheet" href="../css/登录.css" />
+    <link rel="stylesheet" href="../css/忘记密码.css" />
+  </head>
+  <body>
+    <header>
+      <div class="h-box1"><img src="../images/logo1.png" /></div>
+      <ul class="h-box2">
+        <li><a href="#">新闻动态</a></li>
+        <li><a href="大赛报名.html">大赛报名</a></li>
+        <li>
+          <a href="http://bbs.myhope365.com/" target="_blanlk">天亮社区</a>
+        </li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li class="h-li1"><a href="登录.html">登录</a></li>
+        <li style="display: none;" id="li2">
+          <a href="个人中心.html">个人中心</a>
+        </li>
+      </ul>
+    </header>
+    <div class="box">
+      <div class="box1">
+        <h1>忘记密码</h1>
+        <div class="box2">
+          <div class="box2One">
+            <div class="ico"><img src="../images/手机.png" /></div>
+            <input
+              type="text"
+              placeholder="请输入手机号"
+              required
+              id="phonenumber"
+            />
+          </div>
+          <div class="box2One box2Three">
+            <div class="ico"><img src="../images/手机.png" /></div>
+            <input type="text" placeholder="请输入验证码" required id="code" />
+            <input
+              class="input1"
+              type="button"
+              value="获取验证码"
+              required
+              id="btn1"
+            />
+          </div>
+          <div class="box2One">
+            <div class="ico"><img src="../images/锁 (3).png" /></div>
+            <input
+              type="password"
+              placeholder="请输密码（4-20位）"
+              required
+              id="password"
+            />
+          </div>
+          <div class="box2One">
+            <div class="ico"><img src="../images/锁 (3).png" /></div>
+            <input
+              type="password"
+              placeholder="请在次输密码（4-20位）"
+              required
+              id="password1"
+            />
+          </div>
+          <div class="box2One box2Two">
+            <!-- <input type="button" value="更改密码" required /> -->
+            <button id="btn">更改密码</button>
+          </div>
+          <div style="float: right; margin-right: 50px;">
+            <a style="color: #999999;" href="登录.html">登录</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="f-box1">
+        <div class="f-box">
+          <a href="#">友情链接： </a>
+          <a href="http://myhope365.com/news/index?id=66" target="blank"> 天亮公开课</a>
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank">星云大数据平台</a>
+          <a href="http://yuqing.shangyuninfo.com/" target="blank">天亮舆情监控系统</a>
+          <a href="http://bs.shangyuninfo.com/home" target="blank">IT毕业设计 </a>
+          <a href="http://www.sisec.top/" target="blank">网络安全课堂</a>
+        </div>
+        <p id="copyright" style="display: inline;">
+          copyright@版权所有 天亮教育 </p><span id="websiteId">网站标识码：23667788978</span>
+          备案编号：冀ICP备2356645765765
+        </p>
+        电子邮箱：<p id="email" style="display: inline;">623143506@qq.com</p>技术支持：<span id="technicalSupport">河北尚云信息科技有限公司</span>
+      </div>
+      <div class="f-box2"><img src="../images/微信公众号.jpg" /><p>微信公众号</p></div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/底部.js"></script>
+  <script>
+    if (localStorage.isLogin) {
+      $("#li1").hide();
+      $("#li2").show();
+    }
+    // 忘记密码
+    $("#btn").click(function () {
+      console.log(555);
+      //   手机号
+      var phonenumber = $("#phonenumber").val();
+      // 验证码
+      var code = $("#code").val();
+      // var phonenumber = $("#phonenumber");
+      var password = $("#password").val();
+      //   在次输入密码
+      var password1 = $("#password1").val();
+      $.ajax({
+        url: "http://59.111.92.205:13002/api/findPwd",
+        type: "post",
+        contentType: "application/json",
+        data: JSON.stringify({
+          phonenumber: phonenumber,
+          code: code,
+          password: password,
+          password1: password1,
+          rememberMe: true,
+        }),
+        success: function (res) {
+          console.log(res);
+          alert("更改密码成功");
+        },
+        error: function (err) {},
+      });
+    });
+    // $("#btn1").click(function () {
+    //   //   手机号
+    //   var phonenumber = $("#phonenumber").val();
+    //   $.ajax({
+    //     url: "http://59.111.92.205:13002/api/sendCode?mobile=" + phonenumber,
+    //     type: "get",
+    //     contentType: "application/json",
+
+    //     success: function (res) {
+    //       console.log(res);
+          
+    //     },
+    //     error: function (err) {},
+    //   });
+    // });
+// 获取验证码
+    $("#btn1").click(function () {
+      var wait = 60;
+      // function
+      var time = setInterval(function () {
+        wait--;
+        $("#btn1").val(wait + "获取验证码");
+        if (wait == 0) {
+          clearInterval(time);
+          $("#btn1").val(60 + "获取验证码");
+        }
+      }, 1000);
+    });
+  </script>
+</html>

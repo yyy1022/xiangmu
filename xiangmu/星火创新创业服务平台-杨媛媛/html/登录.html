@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/新闻动态.css" />
+    <link rel="stylesheet" href="../css/登录.css" />
+  </head>
+  <body>
+    <header>
+      <div class="h-box1"><img src="../images/logo1.png" /></div>
+      <ul class="h-box2">
+        <li><a href="新闻动态.html">新闻动态</a></li>
+        <li><a href="大赛报名.html">大赛报名</a></li>
+        <li>
+          <a href="http://bbs.myhope365.com/" target="_blanlk">天亮社区</a>
+        </li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li class="h-li1" id="li1"><a href="#">登录</a></li>
+        <li id="li2" style="display: none;">
+          <a href="个人中心.html">个人中心</a>
+        </li>
+      </ul>
+    </header>
+    <div class="box">
+      <div class="box1">
+        <h1>星火创新创业服务平台</h1>
+        <div class="box1-one">
+          <div class="one select" class="select"><a href="#">账号登录</a></div>
+          <div class="one"><a>手机登录</a></div>
+        </div>
+        <div class="box2">
+          <div class="boxBox">
+            <div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="请输入用户名" id="userName" />
+              </div>
+              <div class="box2One">
+                <div class="ico"><img src="../images/锁 (3).png" /></div>
+                <input type="password" placeholder="请输密码" id="passWord" />
+              </div>
+              <div class="box2One box2Two">
+                <!-- <input type="button" value="登录" /> -->
+                <button id="btn">登录</button>
+              </div>
+              <ul class="ulBox">
+                <li class="li1"><a href="忘记密码.html">忘记密码</a></li>
+                <li class="li2"><a href="注册.html">注册</a></li>
+              </ul>
+            </div>
+            <div style="display: none;">
+              <div class="box2One">
+                <div class="ico"><img src="../images/人 (2).png" /></div>
+                <input type="text" placeholder="请输入手机号"  id="userName1" />
+              </div>
+              <div class="box2One box2Three">
+                <div class="ico"><img src="../images/手机.png" /></div>
+                <input type="text" placeholder="请输入验证码"  id="passWord1"/>
+                <input
+                  class="input1"
+                  type="button"
+                  value="获取验证码"
+                  id="btn1"
+               
+                />
+              </div>
+              <div class="box2One box2Two">
+                <!-- <input type="button" value="" /> -->
+                <button id="btn2">登录</button>
+              </div>
+              <ul class="ulBox">
+                <li class="li1"><a href="忘记密码.html">忘记密码</a></li>
+                <li class="li2"><a href="注册.html">注册</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="f-box1">
+        <div class="f-box">
+          <a href="#">友情链接： </a>
+          <a href="http://myhope365.com/news/index?id=66" target="blank"> 天亮公开课</a>
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank">星云大数据平台</a>
+          <a href="http://yuqing.shangyuninfo.com/" target="blank">天亮舆情监控系统</a>
+          <a href="http://bs.shangyuninfo.com/home" target="blank">IT毕业设计 </a>
+          <a href="http://www.sisec.top/" target="blank">网络安全课堂</a>
+        </div>
+        <p id="copyright" style="display: inline;">
+          copyright@版权所有 天亮教育 </p><span id="websiteId">网站标识码：23667788978</span>
+          备案编号：冀ICP备2356645765765
+        </p>
+        电子邮箱：<p id="email" style="display: inline;">623143506@qq.com</p>技术支持：<span id="technicalSupport">河北尚云信息科技有限公司</span>
+      </div>
+      <div class="f-box2"><img src="../images/微信公众号.jpg" /><p>微信公众号</p></div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/底部.js"></script>
+  <script src="../js/登录.js"></script>
+  <!-- <script>
+    $(".one").click(function () {
+      console.log(11111);
+      $(this).addClass("select").siblings().removeClass("select");
+      $(".boxBox>div").eq($(this).index()).show().siblings().hide();
+    });
+    
+
+    $("#btn").click(function () {
+      console.log(11111);
+      var userName = $("#userName").val();
+      var passWord = $("#passWord").val();
+      console.log(userName)
+      $.ajax({
+        url: "http://59.111.92.205:13002/api//login",
+        data: {
+          username: userName,
+          password: passWord,
+          rememberMe: true,
+        },
+        type: "POST",
+        success: function (res) {
+          console.log(res);
+         
+          if (res.code == 0) {
+            alert("登陆成功");
+            window.open(
+             "我要报名.html",
+              "_blank"
+            );
+            var value1 = JSON.stringify(res.userInf);
+            localStorage.setItem("isLogin", true);
+            localStorage.setItem("name", value1);
+            console.log(localStorage.name);
+            
+            // console.log(res.userInf)
+          localStorage.setItem("userInf",JSON.stringify(res.userInf))
+          } else {
+            alert("登陆失败");
+            window.open("登录.html");
+          }
+        },
+
+        error: function (error) {
+          console.log(error);
+        }, 
+      });
+    });
+    // 手机号
+    $("#btn2").click(function () {
+      console.log(11111);
+      var userName = $("#userName1").val();
+      var passWord = $("#passWord1").val();
+      console.log(userName)
+      $.ajax({
+        url: "http://59.111.92.205:13002/api//login",
+        data: {
+          username: userName,
+          password: passWord,
+          rememberMe: true,
+        },
+        type: "POST",
+        success: function (res) {
+          console.log(res);
+          if (res.code == 0) {
+            alert("登陆成功");
+            window.open(
+              "file:///C:/Users/lenovo/Desktop/%E6%98%9F%E7%81%AB%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0-%E6%9D%A8%E5%AA%9B%E5%AA%9B/html/%E6%88%91%E8%A6%81%E6%8A%A5%E5%90%8D.html",
+              "_blank"
+            );
+            var value1 = JSON.stringify(res.userInf);
+            localStorage.setItem("isLogin", true);
+            localStorage.setItem("name", value1);
+            console.log(localStorage.name);
+          } else {
+            alert("登陆失败");
+            window.open(
+              "file:///C:/Users/lenovo/Desktop/%E6%98%9F%E7%81%AB%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0-%E6%9D%A8%E5%AA%9B%E5%AA%9B/html/%E7%99%BB%E5%BD%95.html"
+            );
+          }
+        },
+
+        error: function (error) {
+          console.log(error);
+        },
+      });
+    });
+    
+    $("#btn1").click(function () {
+  //   手机号
+
+  var number = $("#userName1").val();
+  $.ajax({
+    url: "http://59.111.92.205:13002/api/sendCode?mobile=" + number,
+    type: "get",
+    contentType: "application/json",
+
+    success: function (res) {
+      console.log(res);
+    },
+    error: function (err) {},
+  });
+});
+
+    $("#btn").click(function () {
+      // 检查不为空
+      var userName = $("#userName1").val();
+      var passWord = $("#passWord1").val();
+      // if()
+
+      if (userName == "" || passWord == "") {
+        console.log("请正确填写账号密码");
+      } else {
+        // 模拟登录状态
+        console.log(localStorage.isLogin);
+        // localStorage.removeItem("isLogin");
+        localStorage.setItem("isLogin", true);
+        console.log(localStorage.isLogin);
+        // 到报名页面点击时判断
+        if (localStorage.isLogin) {
+          // 跳到报名详情页面
+          // console.log("跳到报名详情页面");
+          // //  window.location.href="./mine.html" ;   //相对路径
+          // window.open(
+          //   "file:///C:/Users/lenovo/Desktop/%E6%98%9F%E7%81%AB%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0-%E6%9D%A8%E5%AA%9B%E5%AA%9B/html/%E6%88%91%E8%A6%81%E6%8A%A5%E5%90%8D.html",
+          //   "_blank"
+          // );
+          window.open("http://www.baidu.com", "_blank");
+        } else {
+          // 跳到登录页面
+          console.log("跳到登录页面");
+          window.location.href =
+            "file:///C:/Users/lenovo/Desktop/%E6%98%9F%E7%81%AB%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0-%E6%9D%A8%E5%AA%9B%E5%AA%9B/html/%E7%99%BB%E5%BD%95.html#";
+        }
+      }
+    });
+    // 判断密码是否正确
+    // 倒计时
+    // $(function () {
+    $("#btn1").click(function () {
+      var wait = 60;
+      // function
+      var time = setInterval(function () {
+        wait--;
+        $("#btn1").attr("disabled", true);
+        $("#btn1").val(wait + "获取验证码");
+
+        if (wait == 0) {
+          clearInterval(time);
+          $("#btn1").attr("disabled", false);
+          $("#btn1").val("获取验证码");
+        }
+      }, 1000);
+    });
+    if (localStorage.isLogin) {
+      $("#li1").hide();
+      $("#li2").show();
+    }
+  </script>
+  <script>
+    var btn = document.getElementById("#btn");
+    // console.log(btn);
+
+          $("#btn").click(function () {
+            //   // 检查不为空
+            //   console.log(2222);
+            var userName = $("#userName").val();
+            var passWord = $("#passWord").val();
+              console.log(userName);
+              console.log(passWord);
+              if (userName == "" || passWord == "") {
+                console.log("请正确填写账号密码");
+                var loginUrl = "http://59.111.92.205:13002/api/login";
+
+    // 登录判断
+
+    //           } else {
+
+              // 模拟登录状态
+              console.log(localStorage.isLogin);
+              // localStorage.removeItem("isLogin");
+              localStorage.setItem("isLogin", true);
+              console.log(localStorage.isLogin);
+              // 到报名页面点击时判断
+              if (localStorage.isLogin) {
+                // 跳到报名详情页面
+                // console.log("跳到报名详情页面");
+                //  window.location.href="./mine.html" ;   //相对路径
+                // $("#li1").hide();
+                // $("#li2").show();
+                window.open(
+                  "file:///C:/Users/lenovo/Desktop/%E6%98%9F%E7%81%AB%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0-%E6%9D%A8%E5%AA%9B%E5%AA%9B/html/%E6%88%91%E8%A6%81%E6%8A%A5%E5%90%8D.html",
+                  "_blank"
+                );
+              } else {
+                // 跳到登录页面
+                // $("#li1").show();
+                // $("#li2").hide();
+                window.location.href =
+                  "file:///C:/Users/lenovo/Desktop/%E6%98%9F%E7%81%AB%E5%88%9B%E6%96%B0%E5%88%9B%E4%B8%9A%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0-%E6%9D%A8%E5%AA%9B%E5%AA%9B/html/%E7%99%BB%E5%BD%95.html#";
+              }
+            }
+          });
+  </script> -->
+</html>

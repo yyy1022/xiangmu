@@ -1,0 +1,24 @@
+.box1 {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  /* background: url(../images/创新创业大赛.jpg) no-repeat; */
+}
+.box1 > img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  margin: auto;
+  width: 1000px;
+  height: 400px;
+}
+.s-box1 {
+  float: left;
+  width: 500px;
+}
+.s-box2 {
+  width: 400px;
+  float: right;
+  margin-top: 50px;
+}

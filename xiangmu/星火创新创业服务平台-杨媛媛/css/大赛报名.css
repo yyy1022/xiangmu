@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box1 {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  /* background: url(../images/创新创业大赛.jpg) no-repeat; */
+}
+.box1 > img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  width: 100%;
+  height: 400px;
+}
+.s-box2 > h1 {
+  text-align: center;
+}
+.s-box2 {
+  margin: auto;
+  width: 900px;
+  margin-top: 20px;
+}
+.p1 {
+  text-align: left;
+  color: #515a6e;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* margin-top: 20px;
+  margin-right: 120px; */
+}
+select {
+  height: 30px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+select:hover {
+  border: 1px solid #00ffff;
+}
+.p2 > a {
+  color: #2d8cf0;
+  font-size: 14px;
+}
+.p2 {
+  margin-bottom: 10px;
+}
+.p3 {
+  text-align: center;
+}

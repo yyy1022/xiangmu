@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我要报名</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/新闻动态.css" />
+    <link rel="stylesheet" href="../css/大赛报名.css" />
+    <link rel="stylesheet" href="../css/报名须知.css" />
+    <link rel="stylesheet" href="../css/我要报名.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <div class="h-box1"><img src="../images/logo1.png" /></div>
+      <ul class="h-box2">
+        <li><a href="新闻动态.html">新闻动态</a></li>
+        <li class="h-li2"><a href="大赛报名.html">大赛报名</a></li>
+        <li>
+          <a href="http://bbs.myhope365.com/" target="_blanlk">天亮社区</a>
+        </li>
+        <li><a href="关于我们.html">关于我们</a></li>
+        <li class="h-li1" style="display: none;">
+          <a href="登录.html">登录</a>
+        </li>
+        <li class="h-li2" id="li2"><a href="个人中心.html">个人中心</a></li>
+        <!-- <li class="h-li1" id="li1" style="display: none;">
+          <a href="登录.html">登录</a>
+        </li> -->
+      </ul>
+    </header>
+    <div class="box1"><img src="../images/创新创业大赛.jpg" /></div>
+    <section>
+      <div class="s-box1"><img src="../images/2.jpg" /></div>
+      <a
+        href="大赛报名.html"
+        style="margin-left: 150px; color: #2d8cf0; font-size: 14px;"
+        ><img src="../images/箭头.png" /> 返回上一页</a
+      >
+      <p
+        style="
+          text-align: center;
+          font-size: 18px;
+          font-family: SourceHanSansSC-regular;
+          margin-top: 20px;
+        "
+      >
+        大赛报名
+      </p>
+      <div class="s-box2">
+        <div class="projectName">项目名称</div>
+        <div class="s-box2One">
+          作品名称：<input
+            type="text"
+            placeholder="&nbsp;请输入作品名称(30字以内)"
+            style="margin-right: 300px;"
+            required
+            id="worksTitle"
+          />
+          作品方向：
+          <select id="projectCategory"
+            ><option selected>请选择</option
+            ><option>应用创新类</option>
+            <option>文创艺术类</option>
+            <option>技术创新类</option>
+            <option>营销创意类</option>
+          </select>
+        </div>
+        <div class="projectName">项目介绍信息</div>
+        <div class="s-box2One">
+          所属行业：<input
+            type="text"
+            placeholder="&nbsp;请输入所属行业(30字以内)"
+            style="margin-right: 300px;"
+            required
+            id="industry"
+          />
+          指导老师：<input
+            type="text"
+            placeholder="&nbsp;请输入指导老师(30字以内)"
+            required
+            id="instructor"
+          />
+        </div>
+        <div class="s-box2Two">
+          <span style="vertical-align: top;" id="innovationPoint">主要创新点：</span>
+          <textarea
+            type="text"
+            placeholder="请输入主要创新点（500字以内）"
+            maxlength="500"
+            style="
+              height: 60px;
+              width: 900px;
+              resize: none;
+              border-radius: 5px;
+            "
+            required
+
+          ></textarea>
+        </div>
+        <div class="s-box2Two" style="margin-left: -15px;">
+          <span style="vertical-align: top;">推广应用价值：</span>
+          <textarea
+            type="text"
+            placeholder="请输入主要推广应用价值（250字以内）"
+            maxlength="250"
+            style="
+              height: 60px;
+              width: 900px;
+              resize: none;
+              border-radius: 5px;
+            "
+            id="applicationWhere"
+            required
+          ></textarea>
+        </div>
+        <div class="s-box2Two" style="text-indent: 16px;">
+          <span style="vertical-align: top;">作品简介：</span>
+          <textarea
+            type="text"
+            placeholder="请输入作品简介（800字以内）"
+            maxlength="800"
+            style="
+              height: 160px;
+              width: 900px;
+              resize: none;
+              border-radius: 5px;
+            "
+            id="worksBrief"
+            required
+          ></textarea>
+        </div>
+        <div class="s-box2Two" style="text-indent: 16px;">
+          <span style="vertical-align: top;">附件上传：</span>
+          <textarea
+            type="text"
+            style="height: 60px; width: 900px; resize: none;"
+            required
+          ></textarea>
+        </div>
+        <div class="projectName">参赛者</div>
+        <div class="projectName" style="background: none;">参赛者(1):</div>
+        <div class="s-box2One">
+          姓名：<input
+            type="text"
+            placeholder="&nbsp;请输入姓名30字以内)"
+            style="margin-right: 300px;"
+            required
+            id="name1"
+          />
+          职务：<input
+            type="text"
+            placeholder="&nbsp;请输入职务(30字以内)"
+            required
+            id="job1"
+          />
+        </div>
+        <div class="s-box2One">
+          性别：
+          <select style="margin-right: 300px;" id="gender1"
+            ><option selected>请选择</option
+            ><option>男</option>
+            <option>女</option>
+          </select>
+          年龄：<input
+            type="number"
+            placeholder="&nbsp;请输入年龄(30字以内)"
+            required
+            id="age1"
+          />
+        </div>
+        <div class="s-box2One" style="margin-left: -25px;">
+          联系电话：<input
+            type="text"
+            placeholder="&nbsp;请输入手机号"
+            style="margin-right: 270px;"
+            required
+            pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+           id="phoneNumber1"
+          />
+          身份证号：<input
+            type="text"
+            placeholder="&nbsp;请输入身份证号"
+            pattern="\d{15}|\d{18}"
+            required
+            id="idNumber1"
+          />
+        </div>
+        <div class="projectName">参赛者</div>
+        <div class="projectName" style="background: none;">参赛者(2):</div>
+        <div class="s-box2One">
+          姓名：<input
+            type="text"
+            placeholder="&nbsp;请输入姓名30字以内)"
+            style="margin-right: 300px;"
+            required
+            id="name2"
+          />
+          职务：<input
+            type="text"
+            placeholder="&nbsp;请输入职务(30字以内)"
+            required
+            id="job2"
+          />
+        </div>
+        <div class="s-box2One">
+          性别：
+          <select style="margin-right: 300px;" id="gender2"
+            ><option selected>请选择</option
+            ><option>男</option>
+            <option>女</option>
+          </select>
+          年龄：<input
+            type="number"
+            placeholder="&nbsp;请输入年龄(30字以内)"
+            required
+            id="age2"
+          />
+        </div>
+        <div class="s-box2One" style="margin-left: -25px;">
+          联系电话：<input
+            type="text"
+            placeholder="&nbsp;请输入手机号"
+            style="margin-right: 270px;"
+            required
+            pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+           id="phoneNumber2"
+          />
+          身份证号：<input
+            type="text"
+            placeholder="&nbsp;请输入身份证号"
+            pattern="\d{15}|\d{18}"
+            required
+            id="idNumber3"
+          />
+        </div>
+        <div class="projectName">参赛者</div>
+        <div class="projectName" style="background: none;">参赛者(3):</div>
+        <div class="s-box2One">
+          姓名：<input
+            type="text"
+            placeholder="&nbsp;请输入姓名30字以内)"
+            style="margin-right: 300px;"
+            required
+            id="name3"
+          />
+          职务：<input
+            type="text"
+            placeholder="&nbsp;请输入职务(30字以内)"
+            required
+            id="job3"
+          />
+        </div>
+        <div class="s-box2One">
+          性别：
+          <select style="margin-right: 300px;" id="gender3"
+            ><option selected>请选择</option
+            ><option>男</option>
+            <option>女</option>
+          </select>
+          年龄：<input
+            type="number"
+            placeholder="&nbsp;请输入年龄(30字以内)"
+            required
+            id="age3"
+          />
+        </div>
+        <div class="s-box2One" style="margin-left: -25px;">
+          联系电话：<input
+            type="text"
+            placeholder="&nbsp;请输入手机号"
+            style="margin-right: 270px;"
+            required
+            pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$"
+           id="phoneNumber3"
+          />
+          身份证号：<input
+            type="text"
+            placeholder="&nbsp;请输入身份证号"
+            pattern="\d{15}|\d{18}"
+            required
+            id="idNumber3"
+          />
+        </div>
+
+        <div class="s-box2One" style="text-align: center;">
+          <button>重置</button>
+          <button style="background-color: #57a3f3; color: white;" id="btn1">提交</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="f-box1">
+        <div class="f-box">
+          <a href="#">友情链接： </a>
+          <a href="http://myhope365.com/news/index?id=66" target="blank"> 天亮公开课</a>
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank">星云大数据平台</a>
+          <a href="http://yuqing.shangyuninfo.com/" target="blank">天亮舆情监控系统</a>
+          <a href="http://bs.shangyuninfo.com/home" target="blank">IT毕业设计 </a>
+          <a href="http://www.sisec.top/" target="blank">网络安全课堂</a>
+        </div>
+        <p id="copyright" style="display: inline;">
+          copyright@版权所有 天亮教育 </p><span id="websiteId">网站标识码：23667788978</span>
+          备案编号：冀ICP备2356645765765
+        </p>
+        电子邮箱：<p id="email" style="display: inline;">623143506@qq.com</p>技术支持：<span id="technicalSupport">河北尚云信息科技有限公司</span>
+      </div>
+      <div class="f-box2"><img src="../images/微信公众号.jpg" /><p>微信公众号</p></div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- <script src="../js/底部.js"></script> -->
+  <script src="../js/我要报名.js"></script>
+  <script>
+    
+  </script>
+</html>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  /* height: 800px; */
+}
+.s-box3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.s-box3 > h1 {
+  text-align: center;
+}
+#time {
+  text-align: center;
+}
+.s-box3 {
+  margin-top: 20px;
+  margin-left: 80px;
+  text-align: left;
+  margin-right: 80px;
+  color: #515a6e;
+}
+
+.s-box3 > p {
+  text-indent: 2em;
+}
+footer {
+  margin-top: 50px;
+}

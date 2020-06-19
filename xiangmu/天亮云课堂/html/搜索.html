@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜索</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-3.3.7-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/首页.css" />
+    <link rel="stylesheet" href="../css/搜索.css" />
+
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <div class="h-img">
+        <img src="../首页/images/logo-header.08ec1297.png" />
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="首页.html">首页</a></li>
+          <li class="getBox1" style="margin-top: -2px;">
+            <a href="#"
+              >课程分类
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-jiantouarrow483"></use>
+              </svg>
+            </a>
+
+            <ul id="box1">
+              <li><a>留学韩国专题</a></li>
+              <li><a>留学韩国专题</a></li>
+              <li><a>留学韩国专题</a></li>
+              <li><a>留学韩国专题</a></li>
+              <li><a>留学韩国专题</a></li>
+              <li><a>留学韩国专题</a></li>
+            </ul>
+          </li>
+          <li><a href="#">专属课堂</a></li>
+        </ul>
+      </nav>
+      <div class="h-search">
+        <form class="bs-example bs-example-form" role="form">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="btn"
+              placeholder="搜索课程"
+            />
+            <span class="input-group-addon"
+              ><button id="btn1">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#icon-sousuo"></use>
+                </svg>
+                <a href="搜索.html">搜索</a>
+              </button></span
+            >
+          </div>
+        </form>
+      </div>
+      <div class="h-shopping">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-gouwuche"></use>
+        </svg>
+        <span>登录注册</span>
+        <i>
+          <svg
+            class="icon"
+            aria-hidden="true"
+            style="width: 25px; height: 25px; color: #cccc;"
+          >
+            <use href="#icon-ren" style="background-color: #cccc;"></use>
+          </svg>
+        </i>
+      </div>
+    </header>
+    <!--  -->
+    <section class="main">
+      <div class="m-title">
+        <span
+          ><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-tubiao-fangzi"></use>
+          </svg>
+          首页</span
+        >/<span>课程搜索</span>
+      </div>
+
+      <div class="m-list1">
+        <h3>专题：</h3>
+        <div class="m-list1Box">
+          <span class="active" name="">全部专题</span>
+          <!-- <span> 留学韩国专题</span>
+          <span> 学长面对面</span>
+          <span> 职业素养必修课</span>
+          <span> 大数据</span>
+          <span> WEB前端</span>
+          <span> 数据库</span>
+          <span> 网络爬虫</span>
+          <span> 求职技巧</span>
+          <span> 项目实战</span>
+          <span> 公共常用开发技术</span>
+          <span> JavaSe核心基础</span>
+          <span> 经典笔试面试题</span>
+          <span> 操作系统</span>
+          <span> 毕业设计</span>
+          <span> 数据结构与算法</span>
+          <span> 创新创业</span>
+          <span> 快速玩转热门应用</span> -->
+        </div>
+      </div>
+      <div class="m-list2">
+        <h3>类型：</h3>
+        <div class="m-list2Box">
+          <span class="active">全部类型</span>
+          <span>免费课程</span>
+          <span>付费课程</span>
+          <span>精品课程</span>
+          <span>限时折扣课程</span>
+        </div>
+      </div>
+      <!-- <div class="m-list2">
+        <h3>方式：</h3>
+        <div class="m-list2Box">
+          <span class="active">全部方式</span>
+          <span>直播课程</span>
+          <span>付费课程</span>
+          <span>录播课程</span>
+        </div>
+      </div> -->
+      <div id="m-BigBox" style="border: 1px solie red;">
+        <div id="m-BigBox1">
+          <!-- <div class="freeBox">
+            <div>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing2.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing3.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing4.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing6.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing7.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing8.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing9.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing10.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing2.jpg" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div style="display: none;">
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+        <ul id="bottomPage">
+          <li id="leftBtn">
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-arrow-right-copy-copy
+   "
+              ></use>
+            </svg>
+          </li>
+          <li id="rightBtn">
+            <svg class="icon" aria-hidden="true">
+              <use
+                xlink:href="#icon-arrow-right-copy
+   "
+              ></use>
+            </svg>
+          </li>
+        </ul>
+        <!-- <div class="m-BigBox1" style="display: none;">
+          <div class="freeBox">
+            <div>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div style="display: none;">
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="bottomPage">
+            <li id="leftBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy-copy
+       "
+                ></use>
+              </svg>
+            </li>
+            <li class="li1">1</li>
+            <li class="li1">2</li>
+            <li id="rightBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy
+       "
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="m-BigBox1" style="display: none;">
+          <div class="freeBox">
+            <div>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div style="display: none;">
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="bottomPage">
+            <li id="leftBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy-copy
+       "
+                ></use>
+              </svg>
+            </li>
+            <li class="li1">1</li>
+            <li class="li1">2</li>
+            <li id="rightBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy
+       "
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="m-BigBox1" style="display: none;">
+          <div class="freeBox">
+            <div>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div style="display: none;">
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="free-box">
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="free-box-img">
+                      <img src="./images/jing1.png" />
+                    </div>
+                    <p class="free-box-p"><a> 毕设从小白到老司机修成记 </a></p>
+                    <p style="color: #888; cursor: pointer; font-size: 14px;">
+                      共69节课|192人报名
+                    </p>
+                    <p style="width: 100px; float: left;">
+                      <span style="color: #ff4500;">￥99.9</span
+                      ><span
+                        style="
+                          color: #999;
+                          text-decoration: line-through;
+                          font-size: 12px;
+                        "
+                        >￥800</span
+                      >
+                    </p>
+                    <div class="ant-tag-orange"><a href="#">限时钜惠</a></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="bottomPage">
+            <li id="leftBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy-copy
+       "
+                ></use>
+              </svg>
+            </li>
+            <li class="li1">1</li>
+            <li class="li1">2</li>
+            <li id="rightBtn">
+              <svg class="icon" aria-hidden="true">
+                <use
+                  xlink:href="#icon-arrow-right-copy
+       "
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer>
+      <div class="f-box">
+        <div class="f-title">友情链接:</div>
+        <div class="f-nav">
+          <a href="http://myhope365.com/news/index?id=66" target="blank">
+            天亮公开课</a
+          >
+          <a href="http://shangyuninfo.com/" target="blank">尚云科技</a>
+          <a href="http://starcloud2.myhope365.com/" target="blank"
+            >星云大数据平台</a
+          >
+          <a href="http://yuqing.shangyuninfo.com/" target="blank"
+            >天亮舆情监控系统</a
+          >
+          <a href="http://bs.shangyuninfo.com/home" target="blank"
+            >IT毕业设计
+          </a>
+        </div>
+        <hr
+          style="
+            background-color: rgb(84, 84, 84);
+            width: 1000px;
+            margin: auto;
+            height: 3px;
+            border: none;
+            margin-top: 10px;
+          "
+        />
+        <div style="text-align: center; margin-top: 5px;">
+          Copyright © 2017-2025 石家庄天亮教育科技有限公司
+          备案号:冀ICP备17020003号
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+
+  <script src="../js/iconfont.js"></script>
+  <script src="../js/搜索.js"></script>
+  <script src="../js/首页.js"></script>
+  <!-- <script> -->
+  <!-- // console.log($(".li1")); // console.log($(".freeBox>div")); //
+  $(".li1").click(function () { //
+  $(this).addClass("active1").siblings().removeClass("active1"); //
+  $(".freeBox>div") // .eq($(this).index() - 1) // .show() // .siblings() //
+  .hide(); // // console.log($(".freeBox>div").siblings()); // }); -->
+  <!-- </script> -->
+</html>

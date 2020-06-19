@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid black; */
+}
+.h-box1 {
+  float: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+ul {
+  list-style: none;
+}
+.h-box2 {
+  float: right;
+  height: 60px;
+  margin-right: 20px;
+}
+.h-box2 > li {
+  float: left;
+  width: 100px;
+  text-align: center;
+
+  height: 60px;
+  line-height: 60px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+}
+.h-box2 > li > a {
+  color: black;
+}
+.h-box2 li:hover {
+  color: #00cf8c;
+  border-bottom: 2px solid #00cf8c;
+}
+.h-box2 li:hover > a {
+  color: #00cf8c;
+}
+.h-li2 {
+  border-bottom: 2px solid #00cf8c !important;
+}
+.h-li2 > a {
+  color: #00cf8c !important;
+}
+.h-li1 {
+  background: #00cf8c;
+
+  width: 80px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  color: white !important;
+  margin-top: 15px;
+}
+.h-li1 > a {
+  color: white !important;
+}
+/* 轮播图 */
+.box1 img {
+  height: 400px;
+}
+#carousel-example-generic {
+  cursor: pointer;
+}
+/* .box1 {
+  margin-top: -10px;
+} */
+.section {
+  width: 100px;
+  height: 500px;
+}
+.s-box1 {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.s-box2 {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid black; */
+}
+#s-nav {
+  float: left;
+  margin-left: 150px;
+  margin-top: 50px;
+  padding-right: 40px;
+  border-right: 2px solid #cccc;
+  border-bottom: none;
+  font-size: 16px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+#s-nav input {
+  height: 20px;
+  width: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#s-nav > div {
+  cursor: pointer;
+}
+.chage {
+  background-color: #2d8cf0 !important;
+}
+.s-box2Box {
+  width: 900px;
+  height: 150px;
+  /* margin-bottom: 30px; */
+  /* border: 1px solid black; */
+}
+.s-bigBox {
+  width: 900px;
+  height: 150px;
+  margin-top: 80px;
+  margin-left: 20px;
+  float: left;
+  border-bottom: 1px solid #cccc;
+  overflow: hidden;
+  cursor: pointer;
+}
+.s-bigBox > div {
+  height: 1000%;
+  width: 100%;
+}
+.s-box2Box1 {
+  width: 200px;
+  height: 130px;
+  float: left;
+  /* border: 1px solid black; */
+}
+.s-box2Box1 > img {
+  width: 100%;
+  height: 100%;
+}
+.s-box2Box2 {
+  float: left;
+  margin-left: 20px;
+  /* border: 1px solid black; */
+}
+.s-box2Box2 > h3 {
+  color: #2d8cf0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.s-box2Box3 {
+  float: right;
+  margin-top: 100px;
+}
+.s-box2Box4 {
+  /* margin-top: 0px; */
+  margin-right: 50px;
+  float: right;
+  color: #2d8cf0;
+}
+.s-box2 input {
+  width: 16px;
+  height: 16px;
+}
+#title1 {
+  font-size: 18px;
+}
+/* 底部 */
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #00cf8c;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.f-box {
+  width: 100%;
+  height: 60px;
+  line-height: 50px;
+  font-size: 16px;
+  /* margin-left: 800px; */
+}
+.f-box1 {
+  float: left;
+  margin-left: 250px;
+}
+.f-box > a {
+  color: white;
+  margin-left: 10px;
+}
+.f-box2 {
+  float: right;
+  margin-top: 20px;
+  margin-right: 150px;
+  width: 100px;
+  height: 120px;
+}
+
+#box2 {
+  position: fixed;
+  width: 80px;
+  height: 150px;
+
+  background: #e6f7ff;
+
+  bottom: 50px;
+  right: 40px;
+  cursor: pointer;
+}
+#box2 > .box2One {
+  /* width: 100px;
+  height: 90px; */
+  background: #e6f7ff;
+  margin-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+#box2 > .box2One > img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+#box2 > .box2One > p {
+  margin-left: 10px;
+}
+#box2 > .box2One > p > a {
+  color: #00cf8c;
+  position: relative;
+}
+#box2 > .box2One > p > a:hover {
+  color: white;
+}
+#box3 {
+  width: 300px;
+  height: 200px;
+
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+  display: none;
+}
+#box3 > div > img {
+  width: 150px;
+  height: 200px;
+  float: left;
+}
